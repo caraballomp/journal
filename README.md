@@ -1,8 +1,6 @@
 # Project Journal  <br />
 📝📝📝📝📝📝📝📝📝📝📝📝<br />
 <br /> 
-<br /> 
-<br /> 
 ### Rails and React App <br />
 ### FlatIron Project 4: Michelle Caraballo
 
@@ -12,8 +10,6 @@ User has many Posts <br />
 * User will be able to login to their own profile. 
 * User will be able to Post their journaling by text, image or both. 
 * User will be able to use their Post and have CRUD funtions in order to journal
-<br /> 
-<br /> 
 <br /> 
 
 ## Schema
