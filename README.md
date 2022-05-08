@@ -1,3 +1,60 @@
+# Project Journal  <br />
+📝📝📝📝📝📝📝📝📝📝📝📝<br />
+<br /> 
+<br /> 
+<br /> 
+### Rails and React App <br />
+### FlatIron Project 4: Michelle Caraballo
+
+Post belongs to User <br />
+User has many Posts <br />
+
+* User will be able to login to their own profile. 
+* User will be able to Post their journaling by text, image or both. 
+* User will be able to use their Post and have CRUD funtions in order to journal
+<br /> 
+<br /> 
+<br /> 
+
+## Schema
+
+<img width="653" alt="Screen Shot 2022-05-07 at 8 01 51 PM" src="https://user-images.githubusercontent.com/98852513/167280876-b082903e-6c5b-4ff1-9b4d-5bb9420084ab.png">
+<br /> 
+
+## Website 
+
+<img width="701" alt="Screen Shot 2022-05-07 at 7 55 43 PM" src="https://user-images.githubusercontent.com/98852513/167280883-a7364892-16fc-4419-ac08-4605ac4a4c9e.png">
+<br /> 
+<br /> 
+<br />
+<br /> 
+<br /> 
+<br />
+<br />
+<br />
+<br /> 
+<br /> 
+<br /> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Project Template: React/Rails API
 
 ## Description
