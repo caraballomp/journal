@@ -1,3 +1,20 @@
+/*-------------------- NAV BAR --------------------*/
+.nav_bar {
+  background-color: rgba(0, 0, 0, 0);
+  text-align: center;
+}
+.nav_item {
+  color: rgb(8, 0, 255);
+  font-family: "Lalezar", cursive;
+  font-size: 1.5vw;
+  margin: 0 3rem 0 3rem;
+}
+.nav_item:hover {
+  color: rgb(232, 232, 164);
+  cursor: pointer;
+}
+
+
 .App {
   text-align: center;
 }
@@ -35,4 +52,11 @@
   to {
     transform: rotate(360deg);
   }
+}
+body {
+  background-color: #282c34;
+  color: white;
+  padding: 40px;
+  font-family: Arial;
+  text-align: center;
 }
