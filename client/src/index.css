@@ -10,8 +10,20 @@ body {
   -moz-osx-font-smoothing: grayscale; */
 }
 
-.nav{
+/*-------------------- NAV BAR --------------------*/
+.nav_bar {
+  background-color: blue (0, 0, 0, 0);
   text-align: center;
+}
+.nav_item {
+  color: green(8, 0, 255);
+  font-family: "Lalezar", cursive;
+  font-size: 1.5vw;
+  margin: 0 3rem 0 3rem;
+}
+.nav_item:hover {
+  color: rgb(245, 240, 91);
+  cursor: pointer;
 }
 
 .title{
@@ -25,6 +37,10 @@ body {
   font-size: 10rem;
   text-shadow: 0 0 50px #2d9da9;
   text-shadow: 0 0 30px #34b3c1, 0 0 60px #4dbbc7;
+}
+.title:hover {
+  color: rgb(27, 37, 180);
+  cursor: pointer;
 }
 
 .sectitle{
@@ -58,6 +74,11 @@ body {
   column-gap: 20px;
   flex-wrap: nowrap | wrap | wrap-reverse
 }
+.login{
+  text-align: center;
+  padding: 25px;
+
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -65,6 +86,7 @@ code {
 }
 table {
   border-collapse: collapse;
+  text-align: center;
   width: 100%;
 }
 

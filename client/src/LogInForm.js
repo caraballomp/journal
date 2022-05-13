@@ -15,30 +15,33 @@ function LogIn({ handleLoggedUser, handleLogOff,}) {
             setUser("");
             history.push("/collection");
     } else {
-        alert("Need a username to enter.");
+        alert("Invalid password or username.");
         }
     }
     return (
-        <div>
-        {user !== "" ? (
-            <button onClick={handleLogOff} className="form-submit">
-            Log Off
-        </button>
-    ) : (
+        
+        <div className="login">
     <>
-        <form onSubmit={handleSubmit} className="form-sw">
+        <form onSubmit={handleSubmit} >
             <input
                 type="text"
                 placeholder="Username"
+            />
+
+            <input
+                type="text"
+                placeholder="Password"
                 onChange={handleChange}
                 className="form-text"
             />
             <input type="submit"  />
         </form>
+            {/* <button onClick={handleLogOff} className="form-submit">
+            Log In
+        </button> */}
+        </> 
+        </div>
 
-        </>
-    )}
-    </div>
     );
 }
 

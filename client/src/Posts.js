@@ -64,24 +64,26 @@ const handleChange = (event) => {
 
 
 const data = Object.values(posts).map((post) => {
-    // count += 1;
-    // let new_row = count % 3 == 0 ? '<tr>' : ''
-    // let new_row_end = count % 3 == 0 ? '</tr>' : ''
-  return <span>  <td> <form key={post.id} className="edit-posts-form" onSubmit= {handleSubmit(post.id)} >
-  
+ 
+  return <span> 
+    <td> 
+
+  <form key={post.id} className="edit-posts-form" onSubmit= {handleSubmit(post.id)} >
+
   <div key={post.id}>
     <h2>{post.date}</h2>
-    <input placeholder="Update text here" onChange={handleChange} defaultValue={post.post_text} />
+    <input placeholder="Update text here" onChange={handleChange} />
     <h4> {post.post_text}</h4> 
     <div>
-    <img src={post.image_url} width="250" height="250"/>
+    <img src={post.image_url} width="350" height="350"/>
     
     </div>
     
     <button onClick={() => handleDeletePost(post.id)} className="form-submit">
         Delete 
-      </button>
-      <input type="submit" value="Update Post" />
+    </button>
+
+            <input type="submit" value="Update Post" />
     </div>
     </form>
     </td>
@@ -99,13 +101,16 @@ const data = Object.values(posts).map((post) => {
     return (
 
 <div >
-<NavBar classname = "nav" />
+
     {user !== "" ? <h3>Current User: {user}</h3> : ""}
-        <div  className = "posts">  {show? <NewPost addPosts = {addPosts} /> : null} </div>
-<div className = "posts"> 
-<table><tr>  { data }
-  
-  </tr></table>
+        <div  className = "posts">  
+            {show? <NewPost addPosts = {addPosts} /> : null} </div>
+                <div className = "posts"> 
+<table><tr>  
+
+{ data }
+
+</tr></table>
 
 </div>
 </div>
