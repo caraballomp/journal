@@ -7,6 +7,7 @@ const [user, setUser] = useState("stacey")
 const [posts, setPosts] = useState("")
 const [newPosts, setNewPosts] = useState("")
 const [post_text, setPost_text] = useState("");
+let count = 0;
 
 
 
@@ -61,15 +62,19 @@ const handleChange = (event) => {
 }
   
 
+
 const data = Object.values(posts).map((post) => {
-  return <form key={post.id} className="edit-posts-form" onSubmit= {handleSubmit(post.id)} >
+    // count += 1;
+    // let new_row = count % 3 == 0 ? '<tr>' : ''
+    // let new_row_end = count % 3 == 0 ? '</tr>' : ''
+  return <span>  <td> <form key={post.id} className="edit-posts-form" onSubmit= {handleSubmit(post.id)} >
+  
   <div key={post.id}>
-   
     <h2>{post.date}</h2>
-    <input placeholder="Text" onChange={handleChange} defaultValue={post.post_text} />
+    <input placeholder="Update text here" onChange={handleChange} defaultValue={post.post_text} />
     <h4> {post.post_text}</h4> 
     <div>
-    <img src={post.image_url} width="200" height="250"/>
+    <img src={post.image_url} width="250" height="250"/>
     
     </div>
     
@@ -77,9 +82,12 @@ const data = Object.values(posts).map((post) => {
         Delete 
       </button>
       <input type="submit" value="Update Post" />
-      
     </div>
     </form>
+    </td>
+    </span>
+    
+    
 })
 
 
@@ -95,8 +103,9 @@ const data = Object.values(posts).map((post) => {
     {user !== "" ? <h3>Current User: {user}</h3> : ""}
         <div  className = "posts">  {show? <NewPost addPosts = {addPosts} /> : null} </div>
 <div className = "posts"> 
-
-{ data }
+<table><tr>  { data }
+  
+  </tr></table>
 
 </div>
 </div>
