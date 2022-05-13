@@ -4,7 +4,7 @@
   text-align: center;
 }
 .nav_item {
-  color: rgb(8, 0, 255);
+  color: green;(8, 0, 255);
   font-family: "Lalezar", cursive;
   font-size: 1.5vw;
   margin: 0 3rem 0 3rem;
@@ -53,6 +53,7 @@
     transform: rotate(360deg);
   }
 }
+
 body {
   background-color: #282c34;
   color: white;

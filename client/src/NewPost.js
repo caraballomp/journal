@@ -5,14 +5,19 @@ function NewPosts({ addPosts }) {
 
 const [image_url, setImage_url] = useState("");
 const [post_text, setPost_text] = useState("");
+const [date, setDate] = useState("");
 
 
-function handleTitleChange(e) {
+function handleImage_urlChange(e) {
       setImage_url(e.target.value);
     }
   
-    function handleAuthorChange(e) {
+    function handlePost_textChange(e) {
       setPost_text(e.target.value);
+    }
+
+    function handleDateChange(e) {
+      setDate(e.target.value);
     }
 
     const handleSubmit = (e) => {
@@ -21,6 +26,7 @@ function handleTitleChange(e) {
       const formData ={
         image_url,
         post_text,
+        date,
 
       }
       fetch("http://localhost:3000/posts", {
@@ -37,8 +43,9 @@ function handleTitleChange(e) {
 // map
     return (
       <form className="new-posts-form" onSubmit= {handleSubmit} >
-        <input placeholder="Image" onChange={handleTitleChange} />
-        <input placeholder="Write Message" onChange={handleAuthorChange} />
+        <input placeholder="Date" onChange={handleDateChange} />
+        <input placeholder="Image" onChange={handleImage_urlChange} />
+        <input placeholder="Write Message" onChange={handlePost_textChange} />
         <input type="submit" value="Share your Journal" />
       </form>
     );
